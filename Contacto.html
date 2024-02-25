@@ -34,7 +34,7 @@
                             <li><a class="dropdown-item" href="ListadoCiclistas/MathieuVanderPoel.html">Mathieu Vander Poel</a></li>
                             <li><a class="dropdown-item" href="ListadoCiclistas/JorisNieuwenhuis.html"> Joris Nieuwenhuis</a></li>
                             <li><a class="dropdown-item" href="ListadoCiclistas/LaurensSweeck.html">Laurens Sweeck</a></li>
-                            <li><a class="dropdown-item" href="ListadoCiclistas/PimRonhaar">Pim PimRonhaar</a></li>
+                            <li><a class="dropdown-item" href="ListadoCiclistas/PimRonhaar.html">Pim PimRonhaar</a></li>
                             <li><a class="dropdown-item" href="ListadoCiclistas/PuckPierterse.html">Puck Pierterse</a></li>
                             <li><a class="dropdown-item" href="ListadoCiclistas/IngeVanderHeijden.html">Inge Vander Heijden</a></li>
                             <li><a class="dropdown-item" href="ListadoCiclistas/ZoeBackstedt.html">Zoe Backstedt</a></li>
@@ -62,12 +62,12 @@
       <div style="margin-bottom: 40px;"></div>
       <main>
         <h1 class="contacto">Contacto</h1>
+        <div style="margin-bottom: 40px;"></div>
         <div class="container-fluid">
             <div class="row needs-validation">
-            <div class="card w-50 mx-auto">  
-                           <form id="formulario" onsubmit="return validate();">
+            <div class="card w-50 mx-auto py-3" >  
+                           <form id="formulario" style=" display: grid; gap: 10px">
                     <div class="mb-3">
-
                         <label for="nombre" class="form-label">Nombre</label>
                                 <input type="text" class="form-control"  placeholder="Extensión de 3 letras y menor de 14 y solo se permitirán letras." id="nombre">
                    </div>
@@ -75,12 +75,10 @@
                   <label for="apellidos" class="form-label">Apellidos</label>
                       <input type="text" class="form-control"  placeholder="Debe ser mayor de 4 letras y menor de 30 y solo se permitirán letras." id="apellidos">
                      </div>
-    
               <div class="mb-3">
                       <label for="edad" class="form-label">Edad</label>
                           <input type="text" class="form-control"  placeholder="Únicamente se permitirá dos dígitos, entre 10 y 99" id="edad">
-                         </div>
-                        
+                         </div>   
                     <div class="mb-3">
                                 <label for="email" class="form-label">Correo electrónico</label>
                                 <input type="email" class="form-control" id="email"   placeholder="Debe ser válido.">
@@ -90,17 +88,13 @@
                         <input type="text" class="form-control" placeholder="Hasta 40 caracteres"  id="asunto">
                     </div>
                     <div class="mb-3">
-            
                         <label for="texto" class="form-label">Texto</label>
-            
                         <textarea class="form-control" id="texto" rows="4" cols="50" placeholder="Hasta 400 palabras"></textarea>
-            
                     </div>
-          
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
             <div id="error_message" style="color:rgb(255, 0, 0)"></div>
-          </div>
+            </div>
         </div>
     </div>
     </main>
@@ -130,6 +124,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="./formValidation.js"></script>
     <script>
         function ajustartexto(multiplier){
             if (document.body.style.fontSize == "") {
