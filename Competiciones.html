@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="María Trujillo Falcón">
+    <meta name="description" content="Página principal de Ciclocrós">
+    <meta name="keywords" content="Ciclocrós, Ciclistas, Listado Ciclistas">
+    <title>Ciclocrós</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #a6a6a6;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container-fluid">
+            <img src="logopagina.png" class="img-fluid" alt="Logo pagina" width="100" height="100">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Competiciones.html">Competiciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ListadoCiclistas.html">Listado de ciclistas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ciclistas</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/ListadoCiclistas/MathieuVanderPoel.html">Mathieu Vander Poel</a></li>
+                            <li><a class="dropdown-item" href="/ListadoCiclistas/JorisNieuwenhuis.html"> Joris Nieuwenhuis</a></li>
+                            <li><a class="dropdown-item" href="/ListadoCiclistas/LaurensSweeck.html">Laurens Sweeck</a></li>
+                            <li><a class="dropdown-item" href="/ListadoCiclistas/PimRonhaar">Pim PimRonhaar</a></li>
+                            <li><a class="dropdown-item" href="/ListadoCiclistas/PuckPierterse.html">Aurora Sáez Manzano</a></li>
+                            <li><a class="dropdown-item" href="/ListadoCiclistas/IngeVanderHeijden.html">Daniel Castillo Alvira</a></li>
+                            <li><a class="dropdown-item" href="/ListadoCiclistas/ZoeBackstedt.html">Daniel Torregrosa García</a></li>
+                            <li><a class="dropdown-item" href="/ListadoCiclistas/AnnemarieWorst.html"> Anne MarieWorst</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="ajustartexto(1)" href="#">Aumentar fuente <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-zoom-in" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                            <path d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z"/>
+                            <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z"/>
+                          </svg></a>        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="ajustartexto(-1)" href="#">Disminuir fuente <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-zoom-out" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                            <path d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z"/>
+                            <path fill-rule="evenodd" d="M3 6.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                          </svg></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+      <div style="margin-bottom: 40px;"></div>
+        <main>
+            <table class="table table-striped table-hover table-bordered competiciones">
+                <thead class="thead-light">
+                    <tr class="competiciones">
+                        <td colspan="6">
+                            <h3>Horario competiciones</h3>
+                        </td>    
+                    </tr>
+                    <tr>
+                        <td><b>Fecha</b></td>
+                        <td><b>Carrera</b></td>
+                        <td><b>Video</b></td>
+                        <td><b>Web</b></td>
+                        <td><b>Categoría</b></td>
+                        <td><b>Ganador</b></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>19/08/2023</td>
+                        <td>X20 Trofee Baal-GP Sven Nys</td>
+                        <td><a href="https://cyclocross24.com/race/16018/#video">Video</a></td>
+                        <td><a href="https://gpsvennys.be/">Información</a></td>
+                        <td>C1</td>
+                        <td><a href="ListadoCiclistas/MathieuVanderPoel.html">Mathieu Van Der Poel</a></td>
+                    </tr>
+                <tr>
+                    <td>19/10/2023</td>
+                    <td>Kermiscross Ardooie</td>
+                    <td><a href="https://cyclocross24.com/race/15656/#video">Video</a></td>
+                    <td><a href="https://cyclocrossardooie.be/">Información</a></td>
+                    <td>C2</td>
+                    <td><a href="ListadoCiclistas/AnnemarieWorst.html">Annemarie Worst</a></td>
+                </tr>
+                <tr>
+                    <td>29/10/2023</td>
+                    <td>Gran Premi Les Franqueses-KH7</td>
+                    <td><a href="https://cyclocross24.com/race/15753/#video">Video</a></td>
+                    <td><a href="https://rfec.com/index.php/es/smartweb/seccion/seccion/rfec/home">Información</a></td>
+                    <td>C2</td>
+                    <td>Irene Trabazo Bragado</td>
+                </tr>
+                <tr>
+                    <td>28/12/2023</td>
+                    <td>Superprestige Diegem</td>
+                    <td> </td>
+                    <td><a href="https://www.diegemcross.be/">Información</a></td>
+                    <td>C1</td>
+                    <td><a href="ListadoCiclistas/MathieuVanderPoel.html">Mathieu Van Der Poel</a></td>
+                </tr>
+                <tr>
+                    <td>29/12/2023</td>
+                    <td>Exact Cross Loenhout-Azencross</td>
+                    <td> </td>
+                    <td><a href="https://exactcross.be/loenhout/">Información</a></td>
+                    <td>C1</td>
+                    <td><a href="ListadoCiclistas/MathieuVanderPoel.html">Mathieu Van Der Poel</a></td>
+                </tr>
+                <tr>
+                    <td>30/12/2023</td>
+                    <td>UCI World Cup Hulst</td>
+                    <td><a href="https://cyclocross24.com/race/16016/#video">Video</a></td>
+                    <td><a href="https://www.ucicyclocrossworldcup.com/nl">Información</a></td>
+                    <td>CDM</td>
+                    <td><a href="ListadoCiclistas/MathieuVanderPoel.html">Mathieu Van Der Poel</a></td>
+                </tr>
+                <tr>
+                    <td>04/01/2024</td>
+                    <td>X2O Trofee Koksijde - Vlaamse Duinencross</td>
+                    <td><a href="https://cyclocross24.com/race/16026/#video">Video</a></td>
+                    <td><a href="https://www.koksijde.be/cyclocross">Información</a></td>
+                    <td>C1</td>
+                    <td><a href="ListadoCiclistas/MathieuVanderPoel.html">Mathieu Van Der Poel</a></td>
+                </tr>
+                <tr>
+                    <td>06/01/2024</td>
+                    <td>Hexia Cyclocross Gullegem</td>
+                    <td><a href="https://cyclocross24.com/race/16031/#video">Video</a></td>
+                    <td><a href="https://cyclocrossgullegem.be/">Información</a></td>
+                    <td>C2</td>
+                    <td><a href="ListadoCiclistas/ZoeBackstedt.html">Zoe Backstedt</a></td>
+                </tr>
+                <tr>
+                    <td><s>07/01/2024</s></td>
+                    <td><s>Tour de Pologne Cyclo-cross Chelm</s></td>
+                    <td> </td>
+                    <td> </td>
+                    <td><s>C2</s></td>
+                    <td>CANCELLED</td>
+                </tr>
+                <tr>
+                    <td>07/01/2024</td>
+                    <td>UCI World Cup Zonhoven</td>
+                    <td><a href="https://cyclocross24.com/race/16038/#video">Video</a></td>
+                    <td><a href="https://www.ucicyclocrossworldcup.com/nl">Información</a></td>
+                    <td>CDM</td>
+                    <td><a href="ListadoCiclistas/PuckPierterse.html">Puck Pierterse</a></td>
+                </tr>
+                <tr>
+                    <td>13/01/2024</td>
+                    <td>Luxembourg National Championships Hesperange</td>
+                    <td></td>
+                    <td><a href="https://www.fscl.lu/">Información</a></td>
+                    <td>CN</td>
+                    <td>Loic Bettendorff</td>
+                </tr>
+                <tr>
+                    <td>14/01/2024</td>
+                    <td>Spanish National Championships Amurrio</td>
+                    <td></td>
+                    <td><a href="https://rfec.com/index.php/es/smartweb/seccion/seccion/rfec/home">Información</a></td>
+                    <td>CN</td>
+                    <td>Felipe Orts Lloret</td>
+                </tr>
+                <tr>
+                    <td>20/01/2024</td>
+                    <td>Exact Cross Zonnebeke - Kasteelcross</td>
+                    <td></td>
+                    <td><a href="https://exactcross.be/zonnebeke/">Información</a></td>
+                    <td>C2</td>
+                    <td>No realizado,10:00 GMT </td>
+
+                </tr>
+                <tr>
+                    <td>21/01/2024</td>
+                    <td>UCI World Cup Benidorm</td>
+                    <td></td>
+                    <td><a href="https://www.ucicyclocrossworldcup.com/nl">Información</a></td>
+                    <td>CDM</td>
+                    <td>No realizado, 09:30 GMT </td>
+                    
+                </tr>
+                <tr>
+                    <td>28/01/2024</td>
+                    <td>Greek National Championships Larissa</td>
+                    <td></td>
+                    <td><a href="https://hellenic-cycling.gr/">Información</a></td>
+                    <td>CN</td>
+                    <td>No realizado, 08:00 GMT</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <div style="margin-bottom: 100px;"></div>
+    <footer class="page-footer font-small teal pt-4">
+        <div class="publicidad">
+            <table>
+            <tr>
+                <td><img src="CSD.png" alt="Sponsor 1"></td>
+                <td><img src="RFC.png" alt="Sponsor 2"></td>
+                <td><img src="UCI.jpeg" alt="Sponsor 3"></td>
+                <td><img src="UEC.jpeg" alt="Sponsor 4"></td>
+            </tr>
+            </table>  
+        </div>
+        <div style="margin-bottom: 50px;"></div>
+        <div class="container-fluid text-center text-md-left">
+        <div class="row">
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <div class="col-md-6 mb-md-0 mb-3">
+              <h5 class="text-uppercase font-weight-bold"><span id="displayDateTime"></span></h5>
+              <p><a href="AvisoLegal.html">Aviso Legal</a> | <a href="PoliticaAccesibilidad.html">Política de accesibilidad</a> | <a href="contacto.html">Contacto</a></p>
+            </div>
+        </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2024 - Derechos reservados por María Trujillo Falcón</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script>
+        function ajustartexto(multiplier){
+            if (document.body.style.fontSize == "") {
+                document.body.style.fontSize = "1.0em";
+            }
+            document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+        }
+    </script>
+    <script>
+        const today = new Date();
+        document.getElementById("displayDateTime").innerHTML = today.toLocaleString('es-ES', { weekday: 'long', year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' });
+    </script>
+    </body>
+</html>

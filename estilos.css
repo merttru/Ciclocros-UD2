@@ -1,0 +1,297 @@
+body{
+    background: #E7E4E4; /*Color Gris*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*Tipo de letra*/
+    color: black; /*Color secundario texto, negro*/
+}
+@media only  screen and (max-width: 400px) {/*Si la pantalla es menor a 400px el diseño se adaptara al dispositivo (móviles)*/
+    body{
+        background-color: #E7E4E4;
+        font-size: 14px;
+    }
+    .carousel-3{
+        display: none;
+    }
+    .carousel-2{
+        display: none;
+    }
+    .carousel-1{
+        display: flex;
+    }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px){/*Tablets*/
+    body{
+        background-color: #E7E4E4;
+        font-size: 12px;
+    }
+    .carousel-3{
+        display: none;
+
+    }
+    .carousel-2{
+        display: flex;
+    }
+    .carousel-1{
+        display: none;
+    }
+}
+@media only screen and (min-width:  961px){/*Ordenadores*/
+    body{
+        background-color: #E7E4E4;
+        font-size: 18px;
+    }
+    .carousel-3{
+        display: flex;
+
+    }
+    .carousel-2{
+        display: none;
+    }
+    .carousel-1{
+        display: none;
+    }
+}
+nav ul li{
+    background-color: #a6a6a6; /*Color fondo*/
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+nav ul li:hover{
+    background-color: #9A0808; /*Color al pasar el cursor*/
+}
+nav ul li a {
+    display: block;
+    color:black !important; /*Color de letra y el important hace que se ponga obligatoriamente*/
+    text-decoration: none; 
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700; /*hacerlo negrita*/
+}
+nav ul li a:hover{
+    color: white;
+}
+nav ul ul{ /*El menu desplegable*/
+    width: auto;
+    background: #a6a6a6 !important;
+}
+nav ul ul li{
+    float: none;
+    width: auto; /*El ancho del menú desplegable*/
+}
+nav ul ul a{
+    line-height: 120%;
+    padding: 20px 25px;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+main{
+    text-align: center;
+}
+/*Index*/
+p.articulos{
+    text-align: center; /*Titulo de articulo a la derecha*/
+    background-color: #9A0808; /*Linea separadora*/
+    color: white;
+    height: 50px;
+    font-size: 35px;
+}
+p.fecha{
+    margin: auto;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px; /*tamaño de la fecha*/
+    text-align: center;
+    color: black;
+    width: 15%;
+    text-wrap: nowrap;
+}
+p.titulo{
+    background-color: #868686;
+    text-align: center;
+    font-size: 30px;
+}
+div.articulo{
+    text-align: right;
+}
+div.articulos{
+    width: 50%;
+    margin: auto;
+}
+/*span de articulo*/
+span.highlight {
+    background-color: yellow; 
+    color: black;
+}
+div.publicidad {
+    margin-top: 20px;
+}
+div.publicidad table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #a6a6a6;
+    margin: 0;
+    padding: 0;
+}
+div.publicidad td {
+    padding: 10px;
+    text-align: center;
+}
+div.publicidad img {
+    display: block;
+    margin: auto;
+    max-width: 50%;
+}
+footer {
+    text-align: center;
+    background-color: #a6a6a6;
+    color: white;
+    padding: 1%;
+    width: 100%;
+}
+footer a{
+    color: black;
+}
+footer h5{
+    color: black;
+}
+/*Listado de ciclistas*/
+.ciclistas {
+    width: 100%;
+    border-collapse: collapse;
+}
+.ciclistas h3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: #9A0808;
+    height: 50px;
+    font-size: 35px;
+    font-weight: normal;
+    margin-top: 1px;
+}
+.ciclistas td {
+    border: 1px solid #E7E4E4; /*Borde que separa*/
+    padding: 8px;
+    text-align: center;
+}
+.ciclistas img {
+    display: block;
+    margin: auto;
+    max-width: 50%;
+    height: auto;
+}
+.ciclistas .informacion {
+    text-align: center;
+    padding-left: 5px;
+    background-color: rgb(211, 211, 211); /*Información gris*/
+    border-radius: 8px;
+}
+/*Competiciones*/
+.competiciones h3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: #9A0808;
+    border-radius: 8px;
+    height: 50px;
+    font-size: 35px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+table.competiciones {
+    width: 80%; /*Ancho de la tabla*/
+    border-collapse: collapse; /*Una sola línea*/
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table.competiciones th, table.competiciones td {
+    border: 1px solid #d62d03;
+    padding: 8px;
+    text-align: left;
+}
+table.competiciones td {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+table.competiciones tbody tr:hover td{
+    background-color: #f79494;
+}
+/*Cada participante ciclista*/
+p.participante {
+    text-align: center; /*Nombre cilista centrado*/
+    background-color: #9A0808; /*Linea separadora*/
+    color: white;
+    height: 50px;
+    font-size: 35px;
+}
+.participante {
+    margin: 20px auto; 
+    border-collapse: collapse;
+    width: 90%;
+    background-color: white; /* Fondo tabla blanco*/
+    border-radius: 8px; /* Bordes redondos */
+}
+.participante th, .participante td {
+    border: 1px solid #e9e9e9; /*Borde que separa*/
+    padding: 10px;
+    text-align: center;
+}
+.participante th {
+    background-color:  rgb(211, 211, 211);
+}
+/*Info participante*/
+.infoadicional {
+    margin: 80px;
+    margin-left: 10%;
+    border-collapse: collapse;
+    width: 20%;
+    float: left; /* tabla izq*/
+}
+.infoadicional th, .infoadicional td {
+    border: 1px solid #e9e9e9;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+.infoadicional th {
+    background-color: rgb(211, 211, 211);
+}
+/*Clasificacion participante*/
+.clasificacion {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 60%;
+    background-color: white;
+    border-radius: 8px;
+}
+.clasificacion caption {
+    font-weight: bold; /*negrita*/
+    font-size:large;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #9A0808;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+}
+.clasificacion th, .clasificacion td {
+    border: 1px solid #e9e9e9; /*Borde que separa*/
+    padding: 10px;
+    text-align: center;
+}
+.clasificacion th {
+    background-color: rgb(211, 211, 211);
+}
+.container-ciclistas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.foto{
+    width: 33%;
+}
