@@ -60,3 +60,87 @@
         </div>
       </nav>
       <div style="margin-bottom: 40px;"></div>
+      <main>
+        <h1 class="contacto">Contacto</h1>
+        <div class="container-fluid">
+            <div class="row needs-validation">
+            <div class="card w-50 mx-auto">  
+                           <form id="formulario" onsubmit="return validate();">
+                    <div class="mb-3">
+
+                        <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control"  placeholder="Extensión de 3 letras y menor de 14 y solo se permitirán letras." id="nombre">
+                   </div>
+               <div class="mb-3">
+                  <label for="apellidos" class="form-label">Apellidos</label>
+                      <input type="text" class="form-control"  placeholder="Debe ser mayor de 4 letras y menor de 30 y solo se permitirán letras." id="apellidos">
+                     </div>
+    
+              <div class="mb-3">
+                      <label for="edad" class="form-label">Edad</label>
+                          <input type="text" class="form-control"  placeholder="Únicamente se permitirá dos dígitos, entre 10 y 99" id="edad">
+                         </div>
+                        
+                    <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email"   placeholder="Debe ser válido.">
+                            </div>
+            <div class="mb-3">
+                        <label for="asunto" class="form-label">Asunto</label>
+                        <input type="text" class="form-control" placeholder="Hasta 40 caracteres"  id="asunto">
+                    </div>
+                    <div class="mb-3">
+            
+                        <label for="texto" class="form-label">Texto</label>
+            
+                        <textarea class="form-control" id="texto" rows="4" cols="50" placeholder="Hasta 400 palabras"></textarea>
+            
+                    </div>
+          
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+            <div id="error_message" style="color:rgb(255, 0, 0)"></div>
+          </div>
+        </div>
+    </div>
+    </main>
+    <div style="margin-bottom: 100px;"></div>
+    <footer class="page-footer font-small teal pt-4">
+        <div class="publicidad">
+            <table>
+            <tr>
+                <td><img src="CSD.png" alt="Sponsor 1"></td>
+                <td><img src="RFC.png" alt="Sponsor 2"></td>
+                <td><img src="UCI.jpeg" alt="Sponsor 3"></td>
+                <td><img src="UEC.jpeg" alt="Sponsor 4"></td>
+            </tr>
+            </table>  
+        </div>
+        <div style="margin-bottom: 50px;"></div>
+        <div class="container-fluid text-center text-md-left">
+        <div class="row">
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <div class="col-md-6 mb-md-0 mb-3">
+                <h5 class="text-uppercase font-weight-bold"><span id="displayDateTime"></span></h5>
+                <p><a href="AvisoLegal.html">Aviso Legal</a> | <a href="PoliticaAccesibilidad.html">Política de accesibilidad</a> | <a href="Contacto.html">Contacto</a></p>
+            </div>
+        </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2024 - Derechos reservados por María Trujillo Falcón</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script>
+        function ajustartexto(multiplier){
+            if (document.body.style.fontSize == "") {
+                  document.body.style.fontSize = "1.0em";
+            }
+            document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+            }
+    </script>
+    <script>
+        const today = new Date();
+        document.getElementById("displayDateTime").innerHTML = today.toLocaleString('es-ES', { weekday: 'long', year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' });
+    </script>
+</body>
+</html>

@@ -246,8 +246,7 @@ p.participante {
 }
 /*Info participante*/
 .infoadicional {
-    margin: 80px;
-    margin-left: 10%;
+    margin: auto;
     border-collapse: collapse;
     width: 20%;
     float: left; /* tabla izq*/
@@ -295,4 +294,14 @@ p.participante {
 }
 .foto{
     width: 33%;
+}
+table tr > th{ /*Vamos a todas las tablas de tr e indicamos el primero th*/
+    background: #e9e9e9 !important;
+}
+.contacto{
+    color: #9A0808;
+    text-align: center;
+}
+.form-label{
+    font-weight: 700;
 }
